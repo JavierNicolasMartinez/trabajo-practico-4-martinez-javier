@@ -1,0 +1,27 @@
+{
+  "name": "trabajo-practico-4-martinez-javier",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000t\u0000r\u0000a\u0000b\u0000a\u0000j\u0000o\u0000-\u0000p\u0000r\u0000a\u0000c\u0000t\u0000i\u0000c\u0000o\u0000-\u00004\u0000-\u0000m\u0000a\u0000r\u0000t\u0000i\u0000n\u0000e\u0000z\u0000-\u0000j\u0000a\u0000v\u0000i\u0000e\u0000r\u0000\r\u0000 \u0000",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JavierNicolasMartinez/trabajo-practico-4-martinez-javier.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JavierNicolasMartinez/trabajo-practico-4-martinez-javier/issues"
+  },
+  "homepage": "https://github.com/JavierNicolasMartinez/trabajo-practico-4-martinez-javier#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mysql2": "^3.14.1",
+    "sequelize": "^6.37.7"
+  }
+}
