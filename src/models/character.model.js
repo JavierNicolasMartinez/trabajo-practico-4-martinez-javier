@@ -12,7 +12,7 @@ export const Character = sequelize.define("character",{
         allowNull: false,
     },
     ki:{
-        type: DataTypes.INTERGER(30),
+        type: DataTypes.INTEGER(30),
         allowNull: false,
     },
     race:{
