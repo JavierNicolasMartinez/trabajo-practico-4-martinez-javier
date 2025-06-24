@@ -8,7 +8,7 @@ dotenv.config();
 const PORT = process.env.PORT;
 const app = express();
 app.use(express.json());
-app.use("/characters", characterRoutes);
+app.use("/", characterRoutes);
 
 app.listen(PORT, async()=> {
     await startDB();

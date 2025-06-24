@@ -3,7 +3,7 @@ import { sequelize } from "../config/database.js";
 
 export const Character = sequelize.define("character",{
     id:{
-        type: DataTypes.INTENGER(11),
+        type: DataTypes.INTEGER(11),
         autoIncrement: true,
         primaryKey: true,
     },
