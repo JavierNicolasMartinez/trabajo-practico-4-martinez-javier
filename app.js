@@ -1,17 +1,15 @@
-import dotenv  from "dotenv";
 import express from "express";
+import dotenv  from "dotenv";
 import router from "./src/routes/character.routes.js";
 import {startDB}  from "./src/config/database.js";
 dotenv.config();
 
 
-const PORT = process.env.PORT;
 const app = express();
+const PORT = process.env.PORT;
 app.use(express.json()); //esto me permite leer JSON
-app.use("/", router);
+app.use("/api", router);
 
-app.listen(PORT, async()=> {
-    await startDB();
-    console.log(`El servidor esta corriendo en: http://localhost:${PORT}/characters`);
-});
-
+startDB().then(()=>{app.listen(PORT, ()=> {
+    console.log("Escuchando en el puerto: ", PORT);
+})});
