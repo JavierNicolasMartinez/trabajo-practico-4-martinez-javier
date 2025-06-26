@@ -12,7 +12,7 @@ const Character = sequelize.define("character",{
         allowNull: false,
     },
     ki:{
-        type: DataTypes.INTEGER(30),
+        type: DataTypes.INTEGER,
         allowNull: false,
     },
     race:{
@@ -24,7 +24,7 @@ const Character = sequelize.define("character",{
         allowNull: false,
     },
     description:{
-        type: DataTypes.STRING(),
+        type: DataTypes.STRING,
     }
 });
 
