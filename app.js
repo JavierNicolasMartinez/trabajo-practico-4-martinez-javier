@@ -1,14 +1,14 @@
 import dotenv  from "dotenv";
 import express from "express";
-import characterRoutes from "./src/routes/character.routes.js";
+import router from "./src/routes/character.routes.js";
 import {startDB}  from "./src/config/database.js";
 dotenv.config();
 
 
 const PORT = process.env.PORT;
 const app = express();
-app.use(express.json());
-app.use("/", characterRoutes);
+app.use(express.json()); //esto me permite leer JSON
+app.use("/", router);
 
 app.listen(PORT, async()=> {
     await startDB();
